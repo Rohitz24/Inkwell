@@ -24,7 +24,7 @@ AI Streaming: Google Gemini API (gemini-3.6-flash over the Interactions API)
 Getting Started
 1. Clone the repository
 Bash
-git clone https://github.com/<your-username>/inkwell.git
+git clone https://github.com/Rohitz24/Inkwell.git
 cd inkwell
 2. Install dependencies
 Bash
