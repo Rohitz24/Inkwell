@@ -1,16 +1,37 @@
-# React + Vite
+Inkwell
+An editorial publishing platform and writer community built with React, Tailwind CSS, Supabase, and Google Gemini AI.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Editorial Reading & Reader Hub: Minimalist, distraction-free typography optimized for sustained reading, featuring read-time estimations, bookmarks, and publication tags.
 
-Currently, two official plugins are available:
+Dynamic Feed: Micro-post thoughts, quotes, and essay teasers with likes, inline comment threads, restacks, and bookmarking.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+AI-Powered Writer Studio: An editorial writing workspace paired with real-time text streaming powered by Google's gemini-3.6-flash via the Interactions API.
 
-## React Compiler
+Real-Time Messaging: Direct messaging and dialogue between mutual followers and newsletter subscribers backed by Supabase Realtime websocket replication.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Audience & Network Management: In-profile expandable subscriber lists and author follower management with immediate unsubscribe/unfollow controls.
 
-## Expanding the ESLint configuration
+Authentication & Security: Custom editorial landing page supporting email/password auth and direct Google OAuth via Supabase Auth, coupled with password reset and profile privacy controls.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Theme Support: High-contrast editorial dark mode and classic print light mode with persistent state.
+
+Tech Stack
+Frontend: React 18, Vite, Tailwind CSS, Lucide Icons
+Backend & Database: Supabase (PostgreSQL, Row-Level Security, Realtime Subscriptions, Auth)
+AI Streaming: Google Gemini API (gemini-3.6-flash over the Interactions API)
+
+Getting Started
+1. Clone the repository
+Bash
+git clone https://github.com/<your-username>/inkwell.git
+cd inkwell
+2. Install dependencies
+Bash
+npm install
+3. Start local development server
+Bash
+npm run dev
+4. Build for production
+Bash
+npm run build
